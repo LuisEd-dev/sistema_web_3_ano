@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+#principal {
+	width: 310px;
+	height: auto;
+	margin: auto;
+	margin-top: 50px;
+}
+
+
+label {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #999;
+	margin: 5px;
+	width: 300px;
+	height: 16px;
+	float: left;
+}
+
+
+.input_01 {
+	width: 300px;
+	height: 20px;
+	float: left;
+	margin: 5px;
+}
+
+.input_02 {
+	width: 300px;
+	height: 20px;
+	float: left;
+	margin: 5px;
+	background-color: #FFFFD7;
+}
+
+.select_01 {
+	width: 304px;
+	height: 24px;
+	float: left;
+	margin: 5px;
+}
+
+.select_02 {
+	width: 304px;
+	height: 24px;
+	float: left;
+	margin: 5px;
+	background-color: #FFFFD7;
+}
+
+.btn {
+	width:  100px;
+	height: 24px;
+	background-color: #06F;
+	border: 0px;
+	float: left;
+	margin: 5px;
+	color: #FFF;
+}
+
+.btn:hover {
+	width:  100px;
+	height: 24px;
+	background-color: #039;
+	border: 0px;
+	float: left;
+	margin: 5px;
+	color: #FFF;
+}
+
+.textarea_01 {
+	width: 298px;
+	height: 50px;
+	float: left;
+	margin: 5px;
+}
+
+.textarea_02 {
+	width: 298px;
+	height: 50px;
+	float: left;
+	margin: 5px;
+	background-color: #FFFFD7;
+}

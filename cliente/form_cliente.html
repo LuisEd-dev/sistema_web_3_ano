@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../css/formatacao.css">
+
+    <script language="JavaScript">
+	
+        function mascara(t, mask){
+       
+        var i = t.value.length;
+        var saida = mask.substring(1,0);
+        var texto = mask.substring(i)
+        
+         if (texto.substring(0,1) != saida){
+             t.value += texto.substring(0,1);
+         }
+       
+        }
+       
+        function foco() {
+           document.frm_modelo.txt_nome.focus()
+       }
+       
+        function validar_dados() {
+           if(document.frm_modelo.txt_nome.value=="") {
+               alert ("Você deve preencher o campo RG!");
+               document.frm_modelo.txt_nome.focus();
+       
+               return false;
+         }
+       
+           if(document.frm_modelo.txt_nascimento.value=="") {
+               alert ("Você deve preencher o campo Nome!");
+               document.frm_modelo.txt_nascimento.focus();
+       
+               return false;
+         }
+        }
+         
+    </script>
+
+</head>
+<body onload="foco()">
+    <form name="frm_login" action="cadastro_cliente.php" method="POST">
+        <div id="principal">
+        
+        <h1>Cadastro Cliente</h1>
+
+        <label> Nome </label>
+        <input name="txt_nome" type="text" class="input_01">
+        
+        <label> Data Nascimento </label>
+        <input name="txt_data_nascimento" type="date" class="input_01">
+
+        <label> Email </label>
+        <input name="txt_email" type="email" class="input_01">
+
+        <label> Sexo </label>
+        <select name="txt_sexo" class="select_01">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+
+        <input name="btn_enviar" type="submit" value="Enviar" class="btn" onclick="return validar_dados()">  
+
+        </div>
+    </form>
+</body>
+</html>
